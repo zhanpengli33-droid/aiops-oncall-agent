@@ -1,8 +1,10 @@
-# OnCall Agent
+# Intelligent OnCall Agent System
 
-一个面向运维告警排查场景的轻量 Agent 工作流示例。项目使用 LangGraph 组织 Planner、Executor、Replanner 和 Finalizer，通过 MCP 工具查询日志与监控指标，并在客户端统一处理超时、重试和异常。
+> 基于 LangGraph + MCP 的智能运维告警诊断系统
 
-> 本仓库是个人学习与工程实践项目。数据和评测结果均来自本地模拟用例，不代表真实生产环境表现，也未接入任何企业内部系统。
+基于 LangGraph + MCP 构建的智能 OnCall 运维 Agent 系统，通过 Planner、Executor、Replanner 工作流串联告警解析、日志与监控工具调用、根因分析及处置建议生成。
+
+> 本仓库使用本地模拟告警、日志和监控数据进行工程验证，未接入任何企业内部系统；评测结果不代表真实生产环境表现。
 
 ## 项目解决什么问题
 
@@ -56,7 +58,7 @@ FastMCP 服务只负责输入校验和数据查询，LangGraph 工作流只消�
 ## 目录结构
 
 ```text
-oncall-agent/
+aiops-oncall-agent/
 ├── README.md
 ├── pyproject.toml
 ├── src/oncall_agent/
