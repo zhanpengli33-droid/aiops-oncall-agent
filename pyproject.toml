@@ -3,9 +3,9 @@ requires = ["setuptools>=75"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "oncall-agent"
+name = "aiops-oncall-agent"
 version = "0.1.0"
-description = "A lightweight LangGraph and MCP workflow for structured incident diagnosis."
+description = "An intelligent OnCall Agent system built with LangGraph and MCP for structured incident diagnosis."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
