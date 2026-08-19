@@ -1,0 +1,47 @@
+{
+  "incidents": [
+    {
+      "service": "checkout-api",
+      "metrics": {
+        "cpu_utilization": 0.93,
+        "memory_utilization": 0.68
+      },
+      "logs": [
+        {
+          "level": "ERROR",
+          "message": "payment-gateway timeout after 3000ms"
+        },
+        {
+          "level": "WARN",
+          "message": "request queue depth reached 480"
+        }
+      ]
+    },
+    {
+      "service": "catalog-worker",
+      "metrics": {
+        "cpu_utilization": 0.57,
+        "memory_utilization": 0.91
+      },
+      "logs": [
+        {
+          "level": "WARN",
+          "message": "memory allocation growth detected in image cache"
+        }
+      ]
+    },
+    {
+      "service": "search-api",
+      "metrics": {
+        "cpu_utilization": 0.72,
+        "memory_utilization": 0.64
+      },
+      "logs": [
+        {
+          "level": "ERROR",
+          "message": "upstream error: index shard unavailable"
+        }
+      ]
+    }
+  ]
+}
